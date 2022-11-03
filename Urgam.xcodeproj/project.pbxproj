@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B48E7229136A61008DF1D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E7129136A61008DF1D7 /* AppDelegate.swift */; };
+		A1B48E7429136A61008DF1D7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1B48E7329136A61008DF1D7 /* GameScene.sks */; };
+		A1B48E7629136A61008DF1D7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1B48E7529136A61008DF1D7 /* Actions.sks */; };
+		A1B48E7829136A61008DF1D7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E7729136A61008DF1D7 /* GameScene.swift */; };
+		A1B48E7A29136A61008DF1D7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E7929136A61008DF1D7 /* GameViewController.swift */; };
+		A1B48E7D29136A61008DF1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B48E7B29136A61008DF1D7 /* Main.storyboard */; };
+		A1B48E7F29136A63008DF1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B48E7E29136A63008DF1D7 /* Assets.xcassets */; };
+		A1B48E8229136A63008DF1D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B48E8029136A63008DF1D7 /* LaunchScreen.storyboard */; };
+		A1B48E8C29136A64008DF1D7 /* UrgamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E8B29136A64008DF1D7 /* UrgamTests.swift */; };
+		A1B48E9629136A64008DF1D7 /* UrgamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E9529136A64008DF1D7 /* UrgamUITests.swift */; };
+		A1B48E9829136A64008DF1D7 /* UrgamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E9729136A64008DF1D7 /* UrgamUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B48E8829136A64008DF1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B48E6629136A61008DF1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B48E6D29136A61008DF1D7;
+			remoteInfo = Urgam;
+		};
+		A1B48E9229136A64008DF1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B48E6629136A61008DF1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B48E6D29136A61008DF1D7;
+			remoteInfo = Urgam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1B48E6E29136A61008DF1D7 /* Urgam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Urgam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B48E7129136A61008DF1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1B48E7329136A61008DF1D7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A1B48E7529136A61008DF1D7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		A1B48E7729136A61008DF1D7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A1B48E7929136A61008DF1D7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A1B48E7C29136A61008DF1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1B48E7E29136A63008DF1D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1B48E8129136A63008DF1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1B48E8729136A64008DF1D7 /* UrgamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrgamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B48E8B29136A64008DF1D7 /* UrgamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgamTests.swift; sourceTree = "<group>"; };
+		A1B48E9129136A64008DF1D7 /* UrgamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrgamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B48E9529136A64008DF1D7 /* UrgamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgamUITests.swift; sourceTree = "<group>"; };
+		A1B48E9729136A64008DF1D7 /* UrgamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B48E6B29136A61008DF1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B48E8429136A64008DF1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B48E8E29136A64008DF1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B48E6529136A61008DF1D7 = {
+			isa = PBXGroup;
+			children = (
+				A1B48E7029136A61008DF1D7 /* Urgam */,
+				A1B48E8A29136A64008DF1D7 /* UrgamTests */,
+				A1B48E9429136A64008DF1D7 /* UrgamUITests */,
+				A1B48E6F29136A61008DF1D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B48E6F29136A61008DF1D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B48E6E29136A61008DF1D7 /* Urgam.app */,
+				A1B48E8729136A64008DF1D7 /* UrgamTests.xctest */,
+				A1B48E9129136A64008DF1D7 /* UrgamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B48E7029136A61008DF1D7 /* Urgam */ = {
+			isa = PBXGroup;
+			children = (
+				A1B48E7129136A61008DF1D7 /* AppDelegate.swift */,
+				A1B48E7329136A61008DF1D7 /* GameScene.sks */,
+				A1B48E7529136A61008DF1D7 /* Actions.sks */,
+				A1B48E7729136A61008DF1D7 /* GameScene.swift */,
+				A1B48E7929136A61008DF1D7 /* GameViewController.swift */,
+				A1B48E7B29136A61008DF1D7 /* Main.storyboard */,
+				A1B48E7E29136A63008DF1D7 /* Assets.xcassets */,
+				A1B48E8029136A63008DF1D7 /* LaunchScreen.storyboard */,
+			);
+			path = Urgam;
+			sourceTree = "<group>";
+		};
+		A1B48E8A29136A64008DF1D7 /* UrgamTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B48E8B29136A64008DF1D7 /* UrgamTests.swift */,
+			);
+			path = UrgamTests;
+			sourceTree = "<group>";
+		};
+		A1B48E9429136A64008DF1D7 /* UrgamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B48E9529136A64008DF1D7 /* UrgamUITests.swift */,
+				A1B48E9729136A64008DF1D7 /* UrgamUITestsLaunchTests.swift */,
+			);
+			path = UrgamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B48E6D29136A61008DF1D7 /* Urgam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B48E9B29136A64008DF1D7 /* Build configuration list for PBXNativeTarget "Urgam" */;
+			buildPhases = (
+				A1B48E6A29136A61008DF1D7 /* Sources */,
+				A1B48E6B29136A61008DF1D7 /* Frameworks */,
+				A1B48E6C29136A61008DF1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Urgam;
+			productName = Urgam;
+			productReference = A1B48E6E29136A61008DF1D7 /* Urgam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B48E8629136A64008DF1D7 /* UrgamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B48E9E29136A64008DF1D7 /* Build configuration list for PBXNativeTarget "UrgamTests" */;
+			buildPhases = (
+				A1B48E8329136A64008DF1D7 /* Sources */,
+				A1B48E8429136A64008DF1D7 /* Frameworks */,
+				A1B48E8529136A64008DF1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B48E8929136A64008DF1D7 /* PBXTargetDependency */,
+			);
+			name = UrgamTests;
+			productName = UrgamTests;
+			productReference = A1B48E8729136A64008DF1D7 /* UrgamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1B48E9029136A64008DF1D7 /* UrgamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B48EA129136A64008DF1D7 /* Build configuration list for PBXNativeTarget "UrgamUITests" */;
+			buildPhases = (
+				A1B48E8D29136A64008DF1D7 /* Sources */,
+				A1B48E8E29136A64008DF1D7 /* Frameworks */,
+				A1B48E8F29136A64008DF1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B48E9329136A64008DF1D7 /* PBXTargetDependency */,
+			);
+			name = UrgamUITests;
+			productName = UrgamUITests;
+			productReference = A1B48E9129136A64008DF1D7 /* UrgamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B48E6629136A61008DF1D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A1B48E6D29136A61008DF1D7 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					A1B48E8629136A64008DF1D7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A1B48E6D29136A61008DF1D7;
+					};
+					A1B48E9029136A64008DF1D7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A1B48E6D29136A61008DF1D7;
+					};
+				};
+			};
+			buildConfigurationList = A1B48E6929136A61008DF1D7 /* Build configuration list for PBXProject "Urgam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B48E6529136A61008DF1D7;
+			productRefGroup = A1B48E6F29136A61008DF1D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B48E6D29136A61008DF1D7 /* Urgam */,
+				A1B48E8629136A64008DF1D7 /* UrgamTests */,
+				A1B48E9029136A64008DF1D7 /* UrgamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B48E6C29136A61008DF1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B48E7D29136A61008DF1D7 /* Main.storyboard in Resources */,
+				A1B48E7429136A61008DF1D7 /* GameScene.sks in Resources */,
+				A1B48E7F29136A63008DF1D7 /* Assets.xcassets in Resources */,
+				A1B48E8229136A63008DF1D7 /* LaunchScreen.storyboard in Resources */,
+				A1B48E7629136A61008DF1D7 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B48E8529136A64008DF1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B48E8F29136A64008DF1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B48E6A29136A61008DF1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B48E7829136A61008DF1D7 /* GameScene.swift in Sources */,
+				A1B48E7A29136A61008DF1D7 /* GameViewController.swift in Sources */,
+				A1B48E7229136A61008DF1D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B48E8329136A64008DF1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B48E8C29136A64008DF1D7 /* UrgamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B48E8D29136A64008DF1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B48E9629136A64008DF1D7 /* UrgamUITests.swift in Sources */,
+				A1B48E9829136A64008DF1D7 /* UrgamUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B48E8929136A64008DF1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B48E6D29136A61008DF1D7 /* Urgam */;
+			targetProxy = A1B48E8829136A64008DF1D7 /* PBXContainerItemProxy */;
+		};
+		A1B48E9329136A64008DF1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B48E6D29136A61008DF1D7 /* Urgam */;
+			targetProxy = A1B48E9229136A64008DF1D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1B48E7B29136A61008DF1D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B48E7C29136A61008DF1D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1B48E8029136A63008DF1D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B48E8129136A63008DF1D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1B48E9929136A64008DF1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1B48E9A29136A64008DF1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B48E9C29136A64008DF1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badpoetrygames.Urgam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1B48E9D29136A64008DF1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badpoetrygames.Urgam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1B48E9F29136A64008DF1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badpoetrygames.UrgamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Urgam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Urgam";
+			};
+			name = Debug;
+		};
+		A1B48EA029136A64008DF1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badpoetrygames.UrgamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Urgam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Urgam";
+			};
+			name = Release;
+		};
+		A1B48EA229136A64008DF1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badpoetrygames.UrgamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Urgam;
+			};
+			name = Debug;
+		};
+		A1B48EA329136A64008DF1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badpoetrygames.UrgamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Urgam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B48E6929136A61008DF1D7 /* Build configuration list for PBXProject "Urgam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B48E9929136A64008DF1D7 /* Debug */,
+				A1B48E9A29136A64008DF1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B48E9B29136A64008DF1D7 /* Build configuration list for PBXNativeTarget "Urgam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B48E9C29136A64008DF1D7 /* Debug */,
+				A1B48E9D29136A64008DF1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B48E9E29136A64008DF1D7 /* Build configuration list for PBXNativeTarget "UrgamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B48E9F29136A64008DF1D7 /* Debug */,
+				A1B48EA029136A64008DF1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B48EA129136A64008DF1D7 /* Build configuration list for PBXNativeTarget "UrgamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B48EA229136A64008DF1D7 /* Debug */,
+				A1B48EA329136A64008DF1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B48E6629136A61008DF1D7 /* Project object */;
+}
