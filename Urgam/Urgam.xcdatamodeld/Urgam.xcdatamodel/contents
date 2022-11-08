@@ -13,6 +13,7 @@
     <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
         <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FirstSpace" inverseName="game" inverseEntity="FirstSpace"/>
     </entity>
+    <entity name="PlayerCharacter" representedClassName="PlayerCharacter" syncable="YES" codeGenerationType="class"/>
     <entity name="PlayerToken" representedClassName="PlayerToken" syncable="YES" codeGenerationType="class">
         <attribute name="owner" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BoardSpace" inverseName="tokens" inverseEntity="BoardSpace"/>
