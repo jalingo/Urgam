@@ -18,6 +18,8 @@
 		A1B48E8C29136A64008DF1D7 /* UrgamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E8B29136A64008DF1D7 /* UrgamTests.swift */; };
 		A1B48E9629136A64008DF1D7 /* UrgamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E9529136A64008DF1D7 /* UrgamUITests.swift */; };
 		A1B48E9829136A64008DF1D7 /* UrgamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B48E9729136A64008DF1D7 /* UrgamUITestsLaunchTests.swift */; };
+		A1BECB1C2914C57C00400DAE /* Test in Frameworks */ = {isa = PBXBuildFile; productRef = A1BECB1B2914C57C00400DAE /* Test */; };
+		A1BECBCB2919CED800400DAE /* Urgam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1BECBC92919CED800400DAE /* Urgam.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		A1B48E9129136A64008DF1D7 /* UrgamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrgamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B48E9529136A64008DF1D7 /* UrgamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgamUITests.swift; sourceTree = "<group>"; };
 		A1B48E9729136A64008DF1D7 /* UrgamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1BECBCA2919CED800400DAE /* Urgam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Urgam.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BECB1C2914C57C00400DAE /* Test in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +114,7 @@
 				A1B48E7B29136A61008DF1D7 /* Main.storyboard */,
 				A1B48E7E29136A63008DF1D7 /* Assets.xcassets */,
 				A1B48E8029136A63008DF1D7 /* LaunchScreen.storyboard */,
+				A1BECBC92919CED800400DAE /* Urgam.xcdatamodeld */,
 			);
 			path = Urgam;
 			sourceTree = "<group>";
@@ -147,6 +152,9 @@
 			dependencies = (
 			);
 			name = Urgam;
+			packageProductDependencies = (
+				A1BECB1B2914C57C00400DAE /* Test */,
+			);
 			productName = Urgam;
 			productReference = A1B48E6E29136A61008DF1D7 /* Urgam.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +227,9 @@
 				Base,
 			);
 			mainGroup = A1B48E6529136A61008DF1D7;
+			packageReferences = (
+				A1BECB1A2914C57C00400DAE /* XCRemoteSwiftPackageReference "Test" */,
+			);
 			productRefGroup = A1B48E6F29136A61008DF1D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,6 +277,7 @@
 			files = (
 				A1B48E7829136A61008DF1D7 /* GameScene.swift in Sources */,
 				A1B48E7A29136A61008DF1D7 /* GameViewController.swift in Sources */,
+				A1BECBCB2919CED800400DAE /* Urgam.xcdatamodeld in Sources */,
 				A1B48E7229136A61008DF1D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -473,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -610,6 +624,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1BECB1A2914C57C00400DAE /* XCRemoteSwiftPackageReference "Test" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BadPoetryGames/Test.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1BECB1B2914C57C00400DAE /* Test */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BECB1A2914C57C00400DAE /* XCRemoteSwiftPackageReference "Test" */;
+			productName = Test;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A1BECBC92919CED800400DAE /* Urgam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1BECBCA2919CED800400DAE /* Urgam.xcdatamodel */,
+			);
+			currentVersion = A1BECBCA2919CED800400DAE /* Urgam.xcdatamodel */;
+			path = Urgam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1B48E6629136A61008DF1D7 /* Project object */;
 }
