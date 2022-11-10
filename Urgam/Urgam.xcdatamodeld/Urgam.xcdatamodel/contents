@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="BoardSpace" representedClassName=".BoardSpace" syncable="YES" codeGenerationType="class">
-        <attribute name="isSafe" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="spaceState" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="lastSpace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BoardSpace" inverseName="nextSpace" inverseEntity="BoardSpace"/>
-        <relationship name="nextSpace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BoardSpace" inverseName="lastSpace" inverseEntity="BoardSpace"/>
-        <relationship name="tokens" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlayerToken" inverseName="location" inverseEntity="PlayerToken"/>
-    </entity>
-    <entity name="FirstSpace" representedClassName="FirstSpace" parentEntity="BoardSpace" syncable="YES" codeGenerationType="class">
-        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="board" inverseEntity="Game"/>
+    <entity name="Character" representedClassName="Character" syncable="YES" codeGenerationType="class">
+        <attribute name="isNPC" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="portrait" optional="YES" attributeType="Binary"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="tokens" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Token" inverseName="owner" inverseEntity="Token"/>
     </entity>
     <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
-        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FirstSpace" inverseName="game" inverseEntity="FirstSpace"/>
+        <attribute name="begin" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="finish" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Space" inverseName="game" inverseEntity="Space"/>
     </entity>
-    <entity name="PlayerCharacter" representedClassName="PlayerCharacter" syncable="YES" codeGenerationType="class"/>
-    <entity name="PlayerToken" representedClassName="PlayerToken" syncable="YES" codeGenerationType="class">
-        <attribute name="owner" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BoardSpace" inverseName="tokens" inverseEntity="BoardSpace"/>
+    <entity name="Space" representedClassName=".BoardSpace" syncable="YES" codeGenerationType="class">
+        <attribute name="isSafe" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="board" inverseEntity="Game"/>
+        <relationship name="lastSpace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Space" inverseName="nextSpace" inverseEntity="Space"/>
+        <relationship name="nextSpace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Space" inverseName="lastSpace" inverseEntity="Space"/>
+        <relationship name="tokens" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Token" inverseName="location" inverseEntity="Token"/>
+    </entity>
+    <entity name="Token" representedClassName="Token" syncable="YES" codeGenerationType="class">
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Space" inverseName="tokens" inverseEntity="Space"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="tokens" inverseEntity="Character"/>
     </entity>
 </model>
